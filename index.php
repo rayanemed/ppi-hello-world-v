@@ -10,7 +10,7 @@
     <h1>App da Rayane Medeiros</h1>
     <?php
     require_once "model/Conexao.php";
-    $tecnologias = Conexao::select("tecnolgia", "id, nome");
+    $tecnologias = Conexao::select("tecnologia", "id, nome");
     print_r($tecnologias);
     ?>
 </body>
