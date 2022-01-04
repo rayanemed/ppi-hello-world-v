@@ -7,6 +7,11 @@
     <title>Olá povos!</title>
 </head>
 <body>
-    <h1>Feliz ano novo!</h1>
+    <h1>App da Rayane Medeiros</h1>
+    <?php
+    require_once "model/Conexao.php";
+    $tecnologias = Conexao::select("tecnolgia", "id, nome");
+    print_r($tecnologias);
+    ?>
 </body>
 </html>
